@@ -1,54 +1,199 @@
-```html
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>阿懋｜數位門牌</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Noto Sans TC",
+                "Microsoft JhengHei",
+                sans-serif;
+            background: #f3f5f7;
+            color: #222;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 35px 20px 40px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: #1f2937;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .profile h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        .profile p {
+            margin: 8px 0 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .subtitle {
+            margin-top: 18px !important;
+            font-size: 13px !important;
+            color: #888 !important;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #777;
+            margin: 25px 0 10px;
+            padding-left: 4px;
+        }
+
+        .link-button {
+            display: block;
+            width: 100%;
+            padding: 16px 18px;
+            margin: 10px 0;
+            background: white;
+            color: #222;
+            text-decoration: none;
+            border-radius: 14px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+        }
+
+        .icon {
+            display: inline-block;
+            width: 28px;
+            margin-right: 6px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 12px;
+            color: #999;
+            line-height: 1.8;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>阿懋的數位門牌</h1>
+<div class="container">
 
-    <p>歡迎來到我的數位入口</p>
+    <!-- 個人資料 -->
+    <div class="profile">
 
-    <hr>
+        <div class="avatar">
+            阿
+        </div>
 
-    <h2>📱 聯絡方式</h2>
+        <h1>阿懋</h1>
 
-    <p>
-        <a href="https://line.me/" target="_blank">
-            LINE 聯絡
-        </a>
-    </p>
+        <p>軍職｜輔導相關工作</p>
 
-    <p>
-        <a href="tel:0900000000">
-            📞 電話
-        </a>
-    </p>
+        <p class="subtitle">
+            歡迎來到我的數位門牌
+        </p>
 
-    <h2>🎖️ 相關資訊</h2>
+    </div>
 
-    <p>
-        <a href="#" target="_blank">
-            單位宣導專區
-        </a>
-    </p>
 
-    <h2>🔗 其他連結</h2>
+    <!-- 聯絡方式 -->
+    <div class="section-title">
+        📱 聯絡方式
+    </div>
 
-    <p>
-        <a href="#" target="_blank">
-            其他相關連結
-        </a>
-    </p>
+    <a class="link-button"
+       href="YOUR_LINE_LINK"
+       target="_blank">
+        <span class="icon">💬</span>
+        LINE 加好友
+    </a>
 
-    <hr>
+    <a class="link-button"
+       href="tel:YOUR_PHONE">
+        <span class="icon">📞</span>
+        聯絡電話
+    </a>
 
-    <p>© 阿懋</p>
+    <a class="link-button"
+       href="mailto:YOUR_EMAIL">
+        <span class="icon">✉️</span>
+        Email
+    </a>
+
+
+    <!-- 單位相關 -->
+    <div class="section-title">
+        🎖️ 單位資訊
+    </div>
+
+    <a class="link-button"
+       href="YOUR_UNIT_LINK"
+       target="_blank">
+        <span class="icon">📢</span>
+        單位宣導專區
+    </a>
+
+
+    <!-- 其他連結 -->
+    <div class="section-title">
+        🔗 其他連結
+    </div>
+
+    <a class="link-button"
+       href="YOUR_OTHER_LINK"
+       target="_blank">
+        <span class="icon">🌐</span>
+        其他相關連結
+    </a>
+
+
+    <!-- 頁尾 -->
+    <div class="footer">
+
+        數位門牌｜Digital Contact Card<br>
+
+        © 阿懋
+
+    </div>
+
+</div>
 
 </body>
 </html>
-```
