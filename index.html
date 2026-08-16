@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="theme-color" content="#f5f6f7">
-<meta name="color-scheme" content="light dark">
+    <meta charset="UTF-8">
 
-<title>阿懋｜營輔導長的數位名片</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#f5f6f7">
+
+    <meta name="color-scheme"
+          content="light dark">
+
+    <title>阿懋｜營輔導長的數位名片</title>
+
 
     <style>
 
@@ -19,12 +27,16 @@
             box-sizing: border-box;
         }
 
+
         html {
             min-height: 100%;
         }
 
+
         body {
+
             margin: 0;
+
             min-height: 100vh;
 
             font-family:
@@ -35,6 +47,7 @@
                 sans-serif;
 
             background: #f4f5f7;
+
             color: #222;
 
             transition:
@@ -43,12 +56,15 @@
         }
 
 
+
         /* =========================
            主要容器
         ========================= */
 
         .container {
+
             width: 100%;
+
             max-width: 480px;
 
             margin: 0 auto;
@@ -60,47 +76,83 @@
         }
 
 
+
         /* =========================
            個人資料
         ========================= */
 
         .profile {
+
             text-align: center;
+
             margin-bottom: 32px;
         }
 
 
-        /* Q版頭像 */
 
-.avatar {
-    width: 110px;
-    height: 110px;
+        /* =========================
+           Q版頭像
+        ========================= */
 
-    margin: 0 auto 18px;
+        .avatar {
 
-    border-radius: 50%;
+            width: 110px;
 
-    object-fit: contain;
+            height: 110px;
 
-    background: #ffffff;
+            margin:
+                0 auto 18px;
 
-    box-shadow:
-        0 5px 20px rgba(0,0,0,0.08);
+            border-radius: 50%;
 
-    border: 4px solid rgba(255,255,255,0.9);
-}
+            /*
+             * 保留Q版人物完整身形
+             * 不裁切頭部與腳部
+             */
+
+            object-fit: contain;
+
+            /*
+             * Q版圖片本身為白色背景
+             * 因此頭像容器也使用白色
+             */
+
+            background: #ffffff;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.08);
+
+            border:
+                4px solid rgba(255,255,255,0.9);
+
+            display: block;
+        }
+
+
+
+        /* =========================
+           姓名
+        ========================= */
 
         .profile h1 {
+
             margin: 0;
 
             font-size: 29px;
+
             font-weight: 700;
 
             letter-spacing: 3px;
         }
 
 
+
+        /* =========================
+           職務
+        ========================= */
+
         .profile .job {
+
             margin-top: 9px;
 
             font-size: 15px;
@@ -109,7 +161,13 @@
         }
 
 
+
+        /* =========================
+           單位資訊
+        ========================= */
+
         .profile .welcome {
+
             margin-top: 17px;
 
             font-size: 13px;
@@ -120,11 +178,13 @@
         }
 
 
+
         /* =========================
            區塊標題
         ========================= */
 
         .section-title {
+
             display: flex;
 
             align-items: center;
@@ -146,6 +206,7 @@
 
         .section-title::before,
         .section-title::after {
+
             content: "";
 
             flex: 1;
@@ -157,10 +218,12 @@
 
 
         .section-title span {
+
             padding:
                 0
                 12px;
         }
+
 
 
         /* =========================
@@ -207,6 +270,9 @@
         }
 
 
+
+        /* 滑鼠移入 */
+
         .link-button:hover {
 
             transform:
@@ -217,6 +283,9 @@
         }
 
 
+
+        /* 點擊效果 */
+
         .link-button:active {
 
             transform:
@@ -224,9 +293,15 @@
         }
 
 
+
+        /* =========================
+           按鈕圖示
+        ========================= */
+
         .icon {
 
             width: 34px;
+
             height: 34px;
 
             margin-right: 12px;
@@ -234,6 +309,7 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             font-size: 20px;
@@ -242,10 +318,21 @@
         }
 
 
+
+        /* =========================
+           按鈕文字
+        ========================= */
+
         .button-text {
+
             flex: 1;
         }
 
+
+
+        /* =========================
+           右側箭頭
+        ========================= */
 
         .arrow {
 
@@ -253,6 +340,7 @@
 
             color: #999;
         }
+
 
 
         /* =========================
@@ -275,6 +363,7 @@
         }
 
 
+
         /* =========================
            深色模式
         ========================= */
@@ -289,9 +378,15 @@
             }
 
 
+
+            /*
+             * Q版圖片維持白色圓形背景
+             * 避免contain後左右出現黑色區塊
+             */
+
             .avatar {
 
-                background: #24272b;
+                background: #ffffff;
 
                 border-color: #303338;
 
@@ -300,10 +395,12 @@
             }
 
 
+
             .profile .job {
 
                 color: #b5b5b5;
             }
+
 
 
             .profile .welcome {
@@ -312,10 +409,12 @@
             }
 
 
+
             .section-title {
 
                 color: #999;
             }
+
 
 
             .section-title::before,
@@ -323,6 +422,7 @@
 
                 background: #34373b;
             }
+
 
 
             .link-button {
@@ -336,6 +436,7 @@
             }
 
 
+
             .link-button:hover {
 
                 background: #2b2e33;
@@ -345,17 +446,21 @@
             }
 
 
+
             .arrow {
 
                 color: #777;
             }
 
 
+
             .footer {
 
                 color: #777;
             }
+
         }
+
 
 
         /* =========================
@@ -367,15 +472,19 @@
             .container {
 
                 padding-left: 16px;
+
                 padding-right: 16px;
             }
+
 
 
             .avatar {
 
                 width: 96px;
+
                 height: 96px;
             }
+
 
 
             .profile h1 {
@@ -384,19 +493,24 @@
             }
 
 
+
             .link-button {
 
                 min-height: 58px;
 
                 font-size: 15px;
             }
+
         }
 
     </style>
+
 </head>
 
 
+
 <body>
+
 
     <main class="container">
 
@@ -407,12 +521,14 @@
 
         <section class="profile">
 
-            <!--
-    Q版頭像：
-    avatar.jpg
 
-    與 index.html 放在同一層
-              -->
+            <!--
+                Q版頭像：
+                avatar.jpg
+
+                與 index.html
+                放在同一層
+            -->
 
             <img
                 class="avatar"
@@ -420,15 +536,21 @@
                 alt="阿懋 Q版頭像"
             >
 
-            <h1>陳昆懋</h1>
+
+            <h1>
+                陳昆懋
+            </h1>
+
 
             <div class="job">
                 營輔導長
             </div>
 
+
             <div class="welcome">
                 陸軍步兵第二五七旅步四營
             </div>
+
 
         </section>
 
@@ -439,16 +561,26 @@
         ====================== -->
 
         <div class="section-title">
-            <span>📱 聯絡方式</span>
+
+            <span>
+                📱 聯絡方式
+            </span>
+
         </div>
 
 
-        <!-- LINE -->
+
+        <!-- =====================
+             LINE
+        ====================== -->
 
         <a
             class="link-button"
+
             href="https://line.me/ti/p/zoSD_ETxjR"
+
             target="_blank"
+
             rel="noopener noreferrer"
         >
 
@@ -456,9 +588,11 @@
                 💬
             </div>
 
+
             <div class="button-text">
                 LINE 加好友
             </div>
+
 
             <div class="arrow">
                 ›
@@ -468,10 +602,13 @@
 
 
 
-        <!-- 電話 -->
+        <!-- =====================
+             電話
+        ====================== -->
 
         <a
             class="link-button"
+
             href="tel:+886985575198"
         >
 
@@ -479,9 +616,11 @@
                 📞
             </div>
 
+
             <div class="button-text">
                 聯絡電話
             </div>
+
 
             <div class="arrow">
                 ›
@@ -491,10 +630,13 @@
 
 
 
-        <!-- Email -->
+        <!-- =====================
+             Email
+        ====================== -->
 
         <a
             class="link-button"
+
             href="mailto:hnps4703@gmail.com"
         >
 
@@ -502,9 +644,11 @@
                 ✉️
             </div>
 
+
             <div class="button-text">
                 Email
             </div>
+
 
             <div class="arrow">
                 ›
@@ -529,5 +673,7 @@
 
     </main>
 
+
 </body>
+
 </html>
