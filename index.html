@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="theme-color"
-          content="#f4f5f7">
-
-    <meta name="color-scheme"
-          content="light dark">
+    <meta
+        name="theme-color"
+        content="#15171a"
+    >
 
     <title>阿懋｜營輔導長的數位名片</title>
 
@@ -70,9 +70,9 @@
             margin: 0 auto;
 
             padding:
+                34px
                 18px
-                20px
-                26px;
+                28px;
         }
 
 
@@ -85,7 +85,7 @@
 
             text-align: center;
 
-            margin-bottom: 22px;
+            margin-bottom: 28px;
         }
 
 
@@ -96,26 +96,30 @@
 
         .avatar {
 
-            width: 175px;
+            width: 150px;
 
-            height: 175px;
+            height: 150px;
 
             margin:
-                0 auto 13px;
+                0 auto 18px;
+
+            display: block;
 
             border-radius: 50%;
 
             object-fit: contain;
 
+            object-position: center;
+
             background: #ffffff;
 
-            box-shadow:
-                0 7px 24px rgba(0,0,0,0.10);
-
             border:
-                4px solid rgba(255,255,255,0.95);
+                5px solid
+                rgba(255,255,255,0.92);
 
-            display: block;
+            box-shadow:
+                0 7px 25px
+                rgba(0,0,0,0.16);
         }
 
 
@@ -130,11 +134,11 @@
 
             font-size: 38px;
 
-            font-weight: 700;
+            line-height: 1.2;
 
-            letter-spacing: 6px;
+            font-weight: 800;
 
-            line-height: 1.25;
+            letter-spacing: 5px;
         }
 
 
@@ -145,15 +149,15 @@
 
         .profile .job {
 
-            margin-top: 7px;
+            margin-top: 10px;
 
-            font-size: 19px;
-
-            font-weight: 500;
-
-            color: #666;
+            font-size: 22px;
 
             line-height: 1.4;
+
+            font-weight: 600;
+
+            color: #666;
         }
 
 
@@ -164,21 +168,23 @@
 
         .profile .welcome {
 
-            margin-top: 10px;
+            margin-top: 14px;
 
-            font-size: 15px;
+            font-size: 17px;
+
+            line-height: 1.5;
+
+            font-weight: 500;
 
             color: #888;
 
             letter-spacing: 1px;
-
-            line-height: 1.5;
         }
 
 
 
         /* =========================
-           聯絡方式標題
+           區塊標題
         ========================= */
 
         .section-title {
@@ -188,17 +194,17 @@
             align-items: center;
 
             margin:
-                18px
+                22px
                 0
-                11px;
+                12px;
 
-            font-size: 17px;
+            font-size: 18px;
 
-            font-weight: 600;
+            font-weight: 700;
 
             color: #777;
 
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
 
@@ -219,25 +225,22 @@
 
             padding:
                 0
-                14px;
+                13px;
         }
 
 
 
         /* =========================
-           聯絡方塊
+           聯絡按鈕
         ========================= */
 
         .link-button {
 
-            display: grid;
-
-            grid-template-columns:
-                46px
-                1fr
-                46px;
+            display: flex;
 
             align-items: center;
+
+            justify-content: center;
 
             width: 100%;
 
@@ -248,8 +251,8 @@
                 0;
 
             padding:
-                10px
-                16px;
+                15px
+                20px;
 
             background: #ffffff;
 
@@ -257,25 +260,26 @@
 
             text-decoration: none;
 
-            border-radius: 17px;
+            border-radius: 18px;
 
             box-shadow:
-                0 5px 18px rgba(0,0,0,0.07);
+                0 5px 18px
+                rgba(0,0,0,0.07);
 
             transition:
                 transform 0.2s ease,
                 box-shadow 0.2s ease,
                 background 0.3s ease;
 
-            font-size: 20px;
+            font-size: 21px;
 
-            font-weight: 600;
+            font-weight: 700;
         }
 
 
 
         /* =========================
-           滑鼠移入
+           滑過效果
         ========================= */
 
         .link-button:hover {
@@ -284,7 +288,8 @@
                 translateY(-2px);
 
             box-shadow:
-                0 8px 22px rgba(0,0,0,0.11);
+                0 8px 22px
+                rgba(0,0,0,0.12);
         }
 
 
@@ -307,9 +312,11 @@
 
         .icon {
 
-            width: 46px;
+            width: 42px;
 
-            height: 46px;
+            height: 42px;
+
+            margin-right: 14px;
 
             display: flex;
 
@@ -317,35 +324,22 @@
 
             justify-content: center;
 
-            font-size: 25px;
+            font-size: 27px;
 
-            line-height: 1;
-
-            justify-self: center;
+            flex-shrink: 0;
         }
 
 
 
         /* =========================
            按鈕文字
-           真正水平＋垂直置中
         ========================= */
 
         .button-text {
 
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            width: 100%;
-
-            height: 100%;
+            flex: 1;
 
             text-align: center;
-
-            line-height: 1.3;
 
             white-space: nowrap;
         }
@@ -358,23 +352,17 @@
 
         .arrow {
 
-            width: 46px;
+            width: 42px;
 
-            height: 46px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-size: 27px;
-
-            color: #999;
+            font-size: 30px;
 
             line-height: 1;
 
-            justify-self: center;
+            color: #999;
+
+            text-align: center;
+
+            flex-shrink: 0;
         }
 
 
@@ -393,7 +381,7 @@
 
             line-height: 1.7;
 
-            color: #aaa;
+            color: #999;
 
             letter-spacing: 0.5px;
         }
@@ -414,19 +402,17 @@
             }
 
 
-
-            /* Q版維持白色圓形背景 */
-
             .avatar {
 
                 background: #ffffff;
 
-                border-color: #303338;
+                border-color:
+                    #303338;
 
                 box-shadow:
-                    0 7px 24px rgba(0,0,0,0.40);
+                    0 7px 25px
+                    rgba(0,0,0,0.42);
             }
-
 
 
             .profile .job {
@@ -435,19 +421,16 @@
             }
 
 
-
             .profile .welcome {
 
-                color: #888;
+                color: #929292;
             }
-
 
 
             .section-title {
 
                 color: #999;
             }
-
 
 
             .section-title::before,
@@ -457,7 +440,6 @@
             }
 
 
-
             .link-button {
 
                 background: #24272b;
@@ -465,9 +447,9 @@
                 color: #f3f3f3;
 
                 box-shadow:
-                    0 5px 18px rgba(0,0,0,0.28);
+                    0 5px 18px
+                    rgba(0,0,0,0.30);
             }
-
 
 
             .link-button:hover {
@@ -475,23 +457,21 @@
                 background: #2b2e33;
 
                 box-shadow:
-                    0 8px 24px rgba(0,0,0,0.38);
+                    0 8px 22px
+                    rgba(0,0,0,0.38);
             }
-
 
 
             .arrow {
 
-                color: #777;
+                color: #858585;
             }
-
 
 
             .footer {
 
-                color: #666;
+                color: #707070;
             }
-
         }
 
 
@@ -504,99 +484,58 @@
 
             .container {
 
-                padding-left: 16px;
+                padding-left: 15px;
 
-                padding-right: 16px;
+                padding-right: 15px;
             }
-
 
 
             .avatar {
 
-                width: 145px;
+                width: 132px;
 
-                height: 145px;
+                height: 132px;
             }
-
 
 
             .profile h1 {
 
-                font-size: 31px;
+                font-size: 34px;
 
                 letter-spacing: 4px;
             }
 
 
-
             .profile .job {
 
-                font-size: 17px;
+                font-size: 20px;
             }
-
 
 
             .profile .welcome {
 
-                font-size: 13px;
+                font-size: 15px;
             }
-
-
-
-            .section-title {
-
-                font-size: 16px;
-            }
-
 
 
             .link-button {
 
-                grid-template-columns:
-                    42px
-                    1fr
-                    42px;
-
                 min-height: 70px;
 
-                font-size: 18px;
-
-                padding:
-                    9px
-                    12px;
+                font-size: 19px;
             }
-
 
 
             .icon {
-
-                width: 42px;
-
-                height: 42px;
-
-                font-size: 23px;
-            }
-
-
-
-            .arrow {
-
-                width: 42px;
-
-                height: 42px;
 
                 font-size: 25px;
             }
 
 
+            .arrow {
 
-            .footer {
-
-                margin-top: 25px;
-
-                font-size: 9px;
+                font-size: 28px;
             }
-
         }
 
     </style>
@@ -619,11 +558,10 @@
 
 
             <!--
-                Q版頭像：
-                avatar.jpg
+                Q版頭像
 
-                與 index.html
-                放在同一層
+                avatar.jpg 必須與 index.html
+                位於同一層。
             -->
 
             <img
@@ -668,15 +606,24 @@
 
         <!-- =====================
              LINE
+             
+             重點：
+             1. target="_blank"
+                → 要求瀏覽器以新的
+                   browsing context 開啟
+
+             2. rel="noopener noreferrer"
+                → 增加安全性
+
+             3. ↗
+                → 提醒使用者將前往
+                   外部服務
         ====================== -->
 
         <a
             class="link-button"
-
             href="https://line.me/ti/p/zoSD_ETxjR"
-
             target="_blank"
-
             rel="noopener noreferrer"
         >
 
@@ -691,7 +638,7 @@
 
 
             <div class="arrow">
-                ›
+                ↗
             </div>
 
         </a>
@@ -704,7 +651,6 @@
 
         <a
             class="link-button"
-
             href="tel:+886985575198"
         >
 
@@ -732,7 +678,6 @@
 
         <a
             class="link-button"
-
             href="mailto:hnps4703@gmail.com"
         >
 
