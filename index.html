@@ -1,37 +1,96 @@
 <!DOCTYPE html>
+
 <html lang="zh-Hant">
+
 <head>
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="theme-color"
-        content="#15171a"
-    >
+    <meta name="theme-color" content="#15171a">
+
+    <!-- 瀏覽器標題 -->
 
     <title>阿懋｜南測中心政戰科小組長的數位名片</title>
 
+    <!-- 搜尋引擎與網頁簡介 -->
+
+    <meta
+
+        name="description"
+
+        content="阿懋的個人數位名片，提供 LINE 加好友、聯絡電話及 Email 等聯絡方式。"
+
+    >
+
+    <!-- 社群分享預覽：LINE、Facebook 等 -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:locale" content="zh_TW">
+
+    <meta property="og:site_name" content="阿懋的數位名片">
+
+    <meta
+
+        property="og:title"
+
+        content="阿懋｜南測中心政戰科小組長的數位名片"
+
+    >
+
+    <meta
+
+        property="og:description"
+
+        content="陳昆懋｜陸軍部隊訓練南區聯合測考中心政戰科小組長。點擊查看聯絡方式。"
+
+    >
+
+    <meta
+
+        property="og:url"
+
+        content="https://hnps4703.github.io/"
+
+    >
+
+    <meta
+
+        property="og:image"
+
+        content="https://hnps4703.github.io/avatar.jpg"
+
+    >
+
+    <meta
+
+        property="og:image:alt"
+
+        content="阿懋的 Q 版個人頭像"
+
+    >
 
     <style>
 
         /* =========================
+
            基本設定
+
         ========================= */
 
         * {
-            box-sizing: border-box;
-        }
 
+            box-sizing: border-box;
+
+        }
 
         html {
-            min-height: 100%;
-        }
 
+            min-height: 100%;
+
+        }
 
         body {
 
@@ -40,10 +99,15 @@
             min-height: 100vh;
 
             font-family:
+
                 -apple-system,
+
                 BlinkMacSystemFont,
+
                 "Noto Sans TC",
+
                 "Microsoft JhengHei",
+
                 sans-serif;
 
             background: #f4f5f7;
@@ -51,14 +115,17 @@
             color: #222;
 
             transition:
+
                 background 0.3s ease,
+
                 color 0.3s ease;
+
         }
 
-
-
         /* =========================
+
            主要容器
+
         ========================= */
 
         .container {
@@ -69,16 +136,14 @@
 
             margin: 0 auto;
 
-            padding:
-                34px
-                18px
-                28px;
+            padding: 34px 18px 28px;
+
         }
 
-
-
         /* =========================
+
            個人資料
+
         ========================= */
 
         .profile {
@@ -86,13 +151,10 @@
             text-align: center;
 
             margin-bottom: 28px;
+
         }
 
-
-
-        /* =========================
-           Q版頭像
-        ========================= */
+        /* Q 版頭像 */
 
         .avatar {
 
@@ -100,8 +162,7 @@
 
             height: 150px;
 
-            margin:
-                0 auto 18px;
+            margin: 0 auto 18px;
 
             display: block;
 
@@ -113,20 +174,13 @@
 
             background: #ffffff;
 
-            border:
-                5px solid
-                rgba(255,255,255,0.92);
+            border: 5px solid rgba(255, 255, 255, 0.92);
 
-            box-shadow:
-                0 7px 25px
-                rgba(0,0,0,0.16);
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.16);
+
         }
 
-
-
-        /* =========================
-           姓名
-        ========================= */
+        /* 姓名 */
 
         .profile h1 {
 
@@ -139,13 +193,10 @@
             font-weight: 800;
 
             letter-spacing: 5px;
+
         }
 
-
-
-        /* =========================
-           職稱
-        ========================= */
+        /* 職稱 */
 
         .profile .job {
 
@@ -158,13 +209,10 @@
             font-weight: 600;
 
             color: #666;
+
         }
 
-
-
-        /* =========================
-           單位
-        ========================= */
+        /* 單位 */
 
         .profile .welcome {
 
@@ -179,12 +227,13 @@
             color: #888;
 
             letter-spacing: 1px;
+
         }
 
-
-
         /* =========================
+
            區塊標題
+
         ========================= */
 
         .section-title {
@@ -193,10 +242,7 @@
 
             align-items: center;
 
-            margin:
-                22px
-                0
-                12px;
+            margin: 22px 0 12px;
 
             font-size: 18px;
 
@@ -205,10 +251,11 @@
             color: #777;
 
             letter-spacing: 2px;
+
         }
 
-
         .section-title::before,
+
         .section-title::after {
 
             content: "";
@@ -218,20 +265,19 @@
             height: 1px;
 
             background: #dfe2e5;
-        }
 
+        }
 
         .section-title span {
 
-            padding:
-                0
-                13px;
+            padding: 0 13px;
+
         }
 
-
-
         /* =========================
+
            聯絡按鈕
+
         ========================= */
 
         .link-button {
@@ -246,13 +292,9 @@
 
             min-height: 76px;
 
-            margin:
-                12px
-                0;
+            margin: 12px 0;
 
-            padding:
-                15px
-                20px;
+            padding: 15px 20px;
 
             background: #ffffff;
 
@@ -262,53 +304,37 @@
 
             border-radius: 18px;
 
-            box-shadow:
-                0 5px 18px
-                rgba(0,0,0,0.07);
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
 
             transition:
+
                 transform 0.2s ease,
+
                 box-shadow 0.2s ease,
+
                 background 0.3s ease;
 
             font-size: 21px;
 
             font-weight: 700;
+
         }
-
-
-
-        /* =========================
-           滑過效果
-        ========================= */
 
         .link-button:hover {
 
-            transform:
-                translateY(-2px);
+            transform: translateY(-2px);
 
-            box-shadow:
-                0 8px 22px
-                rgba(0,0,0,0.12);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+
         }
-
-
-
-        /* =========================
-           點擊效果
-        ========================= */
 
         .link-button:active {
 
-            transform:
-                scale(0.98);
+            transform: scale(0.98);
+
         }
 
-
-
-        /* =========================
-           左側圖示
-        ========================= */
+        /* 左側圖示 */
 
         .icon {
 
@@ -327,13 +353,10 @@
             font-size: 27px;
 
             flex-shrink: 0;
+
         }
 
-
-
-        /* =========================
-           按鈕文字
-        ========================= */
+        /* 按鈕文字 */
 
         .button-text {
 
@@ -342,13 +365,10 @@
             text-align: center;
 
             white-space: nowrap;
+
         }
 
-
-
-        /* =========================
-           右側箭頭
-        ========================= */
+        /* 右側箭頭 */
 
         .arrow {
 
@@ -363,12 +383,13 @@
             text-align: center;
 
             flex-shrink: 0;
+
         }
 
-
-
         /* =========================
+
            頁尾
+
         ========================= */
 
         .footer {
@@ -384,12 +405,13 @@
             color: #999;
 
             letter-spacing: 0.5px;
+
         }
 
-
-
         /* =========================
+
            深色模式
+
         ========================= */
 
         @media (prefers-color-scheme: dark) {
@@ -399,46 +421,44 @@
                 background: #15171a;
 
                 color: #f3f3f3;
-            }
 
+            }
 
             .avatar {
 
                 background: #ffffff;
 
-                border-color:
-                    #303338;
+                border-color: #303338;
 
-                box-shadow:
-                    0 7px 25px
-                    rgba(0,0,0,0.42);
+                box-shadow: 0 7px 25px rgba(0, 0, 0, 0.42);
+
             }
-
 
             .profile .job {
 
                 color: #b5b5b5;
-            }
 
+            }
 
             .profile .welcome {
 
                 color: #929292;
-            }
 
+            }
 
             .section-title {
 
                 color: #999;
+
             }
 
-
             .section-title::before,
+
             .section-title::after {
 
                 background: #34373b;
-            }
 
+            }
 
             .link-button {
 
@@ -446,38 +466,36 @@
 
                 color: #f3f3f3;
 
-                box-shadow:
-                    0 5px 18px
-                    rgba(0,0,0,0.30);
-            }
+                box-shadow: 0 5px 18px rgba(0, 0, 0, 0.30);
 
+            }
 
             .link-button:hover {
 
                 background: #2b2e33;
 
-                box-shadow:
-                    0 8px 22px
-                    rgba(0,0,0,0.38);
-            }
+                box-shadow: 0 8px 22px rgba(0, 0, 0, 0.38);
 
+            }
 
             .arrow {
 
                 color: #858585;
-            }
 
+            }
 
             .footer {
 
                 color: #707070;
+
             }
+
         }
 
-
-
         /* =========================
+
            小螢幕最佳化
+
         ========================= */
 
         @media (max-width: 360px) {
@@ -487,221 +505,178 @@
                 padding-left: 15px;
 
                 padding-right: 15px;
-            }
 
+            }
 
             .avatar {
 
                 width: 132px;
 
                 height: 132px;
-            }
 
+            }
 
             .profile h1 {
 
                 font-size: 34px;
 
                 letter-spacing: 4px;
-            }
 
+            }
 
             .profile .job {
 
                 font-size: 20px;
-            }
 
+            }
 
             .profile .welcome {
 
                 font-size: 15px;
-            }
 
+            }
 
             .link-button {
 
                 min-height: 70px;
 
                 font-size: 19px;
-            }
 
+            }
 
             .icon {
 
                 font-size: 25px;
-            }
 
+            }
 
             .arrow {
 
                 font-size: 28px;
+
             }
+
         }
 
     </style>
 
 </head>
 
-
-
 <body>
-
 
     <main class="container">
 
-
-        <!-- =====================
-             個人資訊
-        ====================== -->
+        <!-- 個人資訊 -->
 
         <section class="profile">
 
-
-            <!--
-                Q版頭像
-
-                avatar.jpg 必須與 index.html
-                位於同一層。
-            -->
+            <!-- avatar.jpg 必須與 index.html 位於同一層 -->
 
             <img
+
                 class="avatar"
+
                 src="avatar.jpg"
-                alt="阿懋 Q版頭像"
+
+                alt="阿懋 Q 版頭像"
+
             >
 
-
-            <h1>
-                陳昆懋
-            </h1>
-
+            <h1>陳昆懋</h1>
 
             <div class="job">
-                政戰科小組長
-            </div>
 
+                政戰科小組長
+
+            </div>
 
             <div class="welcome">
-                陸軍部隊訓練南區聯合測考中心
-            </div>
 
+                陸軍部隊訓練南區聯合測考中心
+
+            </div>
 
         </section>
 
-
-
-        <!-- =====================
-             聯絡方式
-        ====================== -->
+        <!-- 聯絡方式 -->
 
         <div class="section-title">
 
-            <span>
-                📱 聯絡方式
-            </span>
+            <span>📱 聯絡方式</span>
 
         </div>
 
-
-
-        <!-- =====================
-             LINE
-             
-             重點：
-             1. target="_blank"
-                → 要求瀏覽器以新的
-                   browsing context 開啟
-
-             2. rel="noopener noreferrer"
-                → 增加安全性
-
-             3. ↗
-                → 提醒使用者將前往
-                   外部服務
-        ====================== -->
+        <!-- LINE：在新分頁開啟 -->
 
         <a
+
             class="link-button"
+
             href="https://line.me/ti/p/zoSD_ETxjR"
+
             target="_blank"
+
             rel="noopener noreferrer"
+
         >
 
-            <div class="icon">
-                💬
-            </div>
-
+            <div class="icon">💬</div>
 
             <div class="button-text">
+
                 LINE 加好友
+
             </div>
 
-
-            <div class="arrow">
-                ↗
-            </div>
+            <div class="arrow">↗</div>
 
         </a>
 
-
-
-        <!-- =====================
-             電話
-        ====================== -->
+        <!-- 電話 -->
 
         <a
+
             class="link-button"
+
             href="tel:+886985575198"
+
         >
 
-            <div class="icon">
-                ☎️
-            </div>
-
+            <div class="icon">☎️</div>
 
             <div class="button-text">
+
                 聯絡電話
+
             </div>
 
-
-            <div class="arrow">
-                ›
-            </div>
+            <div class="arrow">›</div>
 
         </a>
 
+        <!-- Email -->
 
+        <a
 
-        <!-- =====================
-             Email
-        ====================== -->
+            class="link-button"
 
-<a
-    class="link-button"
-    href="mailto:hnps4703@gmail.com?subject=聯絡阿懋"
->
+            href="mailto:hnps4703@gmail.com?subject=%E8%81%AF%E7%B5%A1%E9%98%BF%E6%87%8B"
 
-            <div class="icon">
-                ✉️
-            </div>
+        >
 
+            <div class="icon">✉️</div>
 
             <div class="button-text">
+
                 Email
+
             </div>
 
-
-            <div class="arrow">
-                ›
-            </div>
+            <div class="arrow">›</div>
 
         </a>
 
-
-
-        <!-- =====================
-             頁尾
-        ====================== -->
+        <!-- 頁尾 -->
 
         <footer class="footer">
 
@@ -711,9 +686,7 @@
 
         </footer>
 
-
     </main>
-
 
 </body>
 
